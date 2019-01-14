@@ -8,4 +8,9 @@ public class AccountServiceAspect {
         System.out.println("Before method:"+joinPoint.getSignature().getName()+",Class"+joinPoint.getTarget()
         .getClass().getSimpleName());
     }
+
+    public void afterAdvice(JoinPoint joinPoint){
+        System.out.println("After method:"+joinPoint.getSignature().getName()+",Class"+joinPoint.getTarget()
+                .getClass().getSimpleName());
+    }
 }
